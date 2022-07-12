@@ -9,6 +9,16 @@ import XCTest
 @testable import HMLibraryDemo
 
 class HMLibraryDemoTests: XCTestCase {
+    
+//    var hmLibrary: HMLibrary!
+    
+    override class func setUp() {
+//        hmLibrary = HMLibrary()
+    }
+    
+    func testAdd(){
+//        XCTAssertEqual(hmLibrary.add(a: 1, b: 1), 2)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

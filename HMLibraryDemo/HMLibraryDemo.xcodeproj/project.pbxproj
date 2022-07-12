@@ -10,6 +10,7 @@
 		14F38703287DE0A400C1E7D3 /* HMLibraryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F386FA287DE0A400C1E7D3 /* HMLibraryDemo.framework */; };
 		14F38708287DE0A400C1E7D3 /* HMLibraryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F38707287DE0A400C1E7D3 /* HMLibraryDemoTests.swift */; };
 		14F38709287DE0A400C1E7D3 /* HMLibraryDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F386FD287DE0A400C1E7D3 /* HMLibraryDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14F38759287DE6EE00C1E7D3 /* HMLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F38758287DE6EE00C1E7D3 /* HMLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		14F38702287DE0A400C1E7D3 /* HMLibraryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMLibraryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F38707287DE0A400C1E7D3 /* HMLibraryDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMLibraryDemoTests.swift; sourceTree = "<group>"; };
 		14F38752287DE1B600C1E7D3 /* HMLibraryDemoExamples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HMLibraryDemoExamples.xcodeproj; path = ../HMLibraryDemoExamples/HMLibraryDemoExamples.xcodeproj; sourceTree = "<group>"; };
+		14F38758287DE6EE00C1E7D3 /* HMLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				14F386FD287DE0A400C1E7D3 /* HMLibraryDemo.h */,
+				14F38758287DE6EE00C1E7D3 /* HMLibrary.swift */,
 			);
 			path = HMLibraryDemo;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					14F386F9287DE0A400C1E7D3 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					14F38701287DE0A400C1E7D3 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -224,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F38759287DE6EE00C1E7D3 /* HMLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +374,7 @@
 		14F3870D287DE0A400C1E7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -388,6 +394,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +403,7 @@
 		14F3870E287DE0A400C1E7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -423,6 +431,7 @@
 		14F38710287DE0A400C1E7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -438,6 +447,7 @@
 		14F38711287DE0A400C1E7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
